@@ -13,6 +13,7 @@ jobs:
     steps:
       - uses: code-cargo/cargowall-action@v1
         with:
+          mode: 'audit'
           api-url: https://app.dev.codecargo.dev
 
       - name: Checkout
